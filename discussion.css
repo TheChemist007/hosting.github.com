@@ -1,0 +1,420 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#notice{
+    color: white;
+}
+
+/*Navigationbar*/
+.navbar{
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon>.logo img{
+  width: 200px;
+  float: left;
+  height: 70px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.logo{
+    color: white;
+    font-size: 35px;
+    font-family: Arial;
+    padding-left: 2px;
+    float: left;
+    padding-top: 10px;
+}
+
+.menu{
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+
+.menu ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu ul li{
+    list-style: none;
+    margin-left: 52px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.menu ul li a:hover{
+    color: cyan;
+}
+
+/* .menu ul li a:active{
+  color: cyan;
+  text-decoration: underline;
+  text-decoration-style: wavy;
+
+} */
+.search{
+    width: 330px;
+    float: left;
+    margin-left: 85%;
+    margin-top: 10px;
+    /* display:flex;
+    margin-top: 0%; */
+}   
+
+.search>.searchbutton{
+    width: 330px;
+    float: left;
+    margin-left: 1%;
+    margin-top: -44px;
+}
+    
+
+
+.srch{
+    font-family: 'Times New Roman';
+    width:140px ;
+    height: 40px;
+    background: transparent;
+    border: 1px solid whitesmoke;
+    /* border-radius: 10px; */
+    margin-top: -44px;
+    color: black;
+    border-right: none;
+    font-size: 16px;
+    float: left;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+
+}
+
+.searchbutton .btn{
+    width:100px ;
+    height: 40px;
+    background: cyan;
+    border: 2px solid whitesmoke;
+    margin-top: 0%;
+    margin-left: 37%;
+    color: black;
+    padding-top:-200px;
+    font-size: 15px;
+    /* border-bottom-left-radius: 5px; */
+    border-bottom-right-radius: 5px; 
+    border-bottom-right-radius: 5px; 
+}
+
+.searchbutton .btn:focus{
+    outline: none;
+}
+
+.srch:focus{
+    outline: none;
+}
+
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-image: linear-gradient(to top, rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%),url("Backgrounds/8d4070aa369b9d79d77b6c1de25e12fb.jpg");
+    background-position: center;
+    background-size:cover ;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 109vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 1em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10em;
+}
+
+.containerLeft h1 {
+  margin-bottom: 2em;
+  font-size: 2.5em;
+  font-weight: 500;
+  color: white;
+}
+.containerLeft h3 {
+  color: white;
+}
+
+.userProfile {
+  padding: 3em;
+  display: flex;
+  align-items: flex-start;
+  gap: 3em;
+  background-color: #253745;
+  border-radius: 3em;
+  box-shadow: 2px 2px 10px #06141b;
+  cursor: pointer;
+}
+
+.userProfile img {
+  max-width: 75px;
+  border-radius: 100%;
+}
+
+#postBtn {
+  padding: 1px;
+  margin: 1em;
+}
+
+.containerLeft p {
+  color: white;
+  margin-bottom: 1em;
+}
+
+.containerLeft button {
+  padding: 1em 2em;
+  margin-top: 1em;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  background: linear-gradient(to right);
+  color: black;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.containerRight {
+  display: grid;
+  gap: 2em;
+}
+
+.cardContent {
+  display: flex;
+  gap: 1em;
+}
+
+.btn {
+  cursor: grab;
+  display: inline-block;
+  background-color: transparent;
+  padding: 0;
+}
+
+.card {
+  padding: 2em;
+  display: flex;
+  align-items: flex-start;
+  gap: 2em;
+  background-color: #253745;
+  border-radius: 1em;
+  box-shadow: 5px 5px 20px #06141b;
+  cursor: pointer;
+}
+
+.card img {
+  max-width: 75px;
+  border-radius: 100%;
+}
+
+.cardContent {
+  display: flex;
+  gap: 2em;
+}
+  .cardContent span i {
+  font-size: 2em;
+  color: #06141b;
+}
+
+.cardetails p {
+  font-style: italic;
+  color: white;
+  margin-bottom: 1em;
+}
+
+  .cardetails h4 {
+  text-align: right;
+  color: #ccd0cf;
+  font-size: 1em;
+  font-weight: 500;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  background-color: #253745;
+  color: white;
+  cursor: pointer;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 20px;
+  text-align: left;
+}
+
+#heading {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+  .table {
+  background-color: #253745;
+}
+
+/* Scroll bar */
+::-webkit-scrollbar{
+    width: 15px;
+  
+  }
+  
+  ::-webkit-scrollbar-track{
+    background: black;
+  }
+  
+  ::-webkit-scrollbar-thumb{
+    background: linear-gradient(cyan,#1E536E);
+    border-radius: 10px;
+  
+  }
+
+  .footer{
+    display: flex;
+    /* flex-direction: row; */
+    box-sizing: border-box;
+   margin-top: 150px;
+   margin-left: -250px;
+   width: 1200px;
+   height: 380px;
+   padding: 50px 15%;
+   background-color: #253745;
+  }
+
+  .footer div{
+    text-align: center;
+  }
+
+  .col-2{
+    flex-grow: 2;
+  }
+
+  .footer div h3{
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+
+.col-1 a{
+    display:block ;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 10px;
+}
+
+form input{
+    width: 400px;
+    height: 45px;
+    border-radius: 4px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    outline: none;
+    border: none;
+}
+
+form button{
+    background: transparent;
+    border: 2px solid cyan;
+    color: white;
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+  /* for all social containers*/
+  .socialContainer {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: rgb(44, 44, 44);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    transition-duration: 1s;
+  }
+  /* instagram*/
+  .containerOne:hover {
+    background-color: #d62976;
+    transition-duration: 0.3s;
+  }
+  /* twitter*/
+  .containerTwo:hover {
+    background-color: #00acee;
+    transition-duration: 0.3s;
+  }
+  /* linkdin*/
+  .containerThree:hover {
+    background-color: #0072b1;
+    transition-duration: 0.3s;
+  }
+  /* Whatsapp*/
+  .containerFour:hover {
+    background-color: #128c7e;
+    transition-duration: 0.3s;
+  }
+  
+  .socialContainer:active {
+    transform: scale(0.9);
+    transition-duration: 0.3s;
+  }
+  
+  .socialSvg {
+    width: 17px;
+  }
+  
+  .socialSvg path {
+    fill: rgb(255, 255, 255);
+  }
+  
+  .socialContainer:hover .socialSvg {
+    animation: slide-in-top 0.3s both;
+  }
+  
+  @keyframes slide-in-top {
+    0% {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+  
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  .contain{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
